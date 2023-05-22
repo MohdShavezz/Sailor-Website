@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- w3 font cdn -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<style>
+
+
+</style>
+<body>
+
+  <div class="scrollUp rounded" onclick="topFunction()">
+    <i class="	fa fa-arrow-up" style="font-size: 22px;color: white;"></i>
+  </div>
+
+
+    <header>
+        <!-- <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i> -->
+        <div class="sailor">
+            sailor
+        </div>
+
+        <ul class="navHeader mb-0" id="navId">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="a-about"><a href="#">About <span style="font-weight: 800;position: absolute;top: -3px;right:0px">
+                &#9662;</span></a>
+                <ul class="about-content">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li class="a-link"><a href="#">Deep Drop Down <span style="font-weight: 800;position: absolute;right: 10px;">
+                        &#9662;</span> </a>
+                        <ul class="link-content">
+                            <li><a href="#">Dropdown1</a></li>
+                            <li><a href="#">Dropdown1</a></li>
+                            <li><a href="#">Dropdown1</a></li>
+                            <li><a href="#">Dropdown1</a></li>
+                            <li><a href="#">Dropdown1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="text-align: center;"><a href="#" class="btn btn-danger">Get Started</a></li>
+        </ul>
+
+        <div class="icon" onclick="hideShow()">
+            <i class="fa fa-bars" id="hamburger"></i>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/slide/slide-1.jpg" style="filter: brightness(50%);" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1 class="fs-30 line1" style="font-size: 42px;font-weight: 700;">Welcome to Sailor</h1>
+              <p style="padding: 10px 0;" class="line2">Some representative placeholder content for the first slidelorem ntur deleniti optio, sint, ipsa autem ab impedit incidunt eaque aspernatur asperiores mollitia ipsum ut. .</p>
+              <button class="normalBtn line3">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide/slide-2.jpg" style="filter: brightness(50%);" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1 class="fs-30" style="font-size: 42px;font-weight: 700;">Lorem Ipsum</h1>
+              <p style="padding: 10px 0;">Some representative placeholder content for the first slidelorem ntur deleniti optio, sint, ipsa autem ab impedit incidunt eaque aspernatur asperiores mollitia ipsum ut. .</p>
+              <button class="normalBtn">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide/slide-3.jpg" style="filter: brightness(50%);" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1 class="fs-30" style="font-size: 42px;font-weight: 700;">Sequi ea ut et est quaerat</h1>
+              <p style="padding: 10px 0;">Some representative placeholder content for the first slidelorem ntur deleniti optio, sint, ipsa autem ab impedit incidunt eaque aspernatur asperiores mollitia ipsum ut. .</p>
+              <button class="normalBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    <!-- section -->
+    <div class="container-fluid">
+      <div class="row row-cols-md-2 row-cols-sm-1 p-5">
+          <div>
+              <h1 class="display-5 fw-bolder">EUM IPSAM LABORUM DELENITI VELITENA</h1>
+              <p style="font-weight: 500;line-height: 32px;font-size: 24px;" class="my-sm-4">Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</p>
+          </div>
+          <div>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+
+            <ul class="m-0 p-0" style="line-height: 2;margin: 5px !important;">
+              <li><i class='fas fa-check-double doubleCheckIcon' ></i>Ullamco laboris nisi ut aliquip ex ea commodo consequa </li>
+              <li><i class='fas fa-check-double doubleCheckIcon' ></i>Duis aute irure dolor in reprehenderit in voluptate velit </li>
+              <li><i class='fas fa-check-double doubleCheckIcon' ></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+            </ul>
+            <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            </div>
+      </div>
+    </div>
+
+    <!-- client section  -->
+    <section id="clients" style="background-color: whitesmoke;">
+      <div class="container text-center">
+        <div class= "row row-cols-2  row-cols-sm-2 row-cols-md-3  row-cols-lg-6 p-5 p-sm-0">
+          <img src="assets/img/clients/client-1.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+          <img src="assets/img/clients/client-2.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+          <img src="assets/img/clients/client-3.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+          <img src="assets/img/clients/client-4.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+          <img src="assets/img/clients/client-5.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+          <img src="assets/img/clients/client-6.png" class="img-fluid" style="height: 90px;padding: 20px;filter: grayscale(100);" alt="image">
+        </div>
+      </div>
+    </section>
+
+    <!-- services   -->
+    <section id="services"  class="mt-5">
+      <div class="container text-center">
+        <div class= "row row-cols-sm-1 row-cols-md-2 py-5">
+   
+
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-briefcase" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-briefcase" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-sticky-note-o" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-binoculars" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-adjust" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="py-3 m-2 rounded bg-light iconBox">
+              <div class="left">
+                <i class="fa fa-calendar" style="font-size: 35px;color: brown;"></i>
+              </div>
+              <div class="right">
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- gallery  -->   
+<div class="gallery">
+
+  <ul class="controls">
+      <li class="buttons active" data-filter="all">all</li>
+      <li class="buttons" data-filter="app">APP</li>
+      <li class="buttons" data-filter="cards">CARDS</li>
+      <li class="buttons" data-filter="web">WEB</li>
+  </ul>
+
+  <div class="image-container">
+
+      <a href="assets/img/portfolio/portfolio-1.jpg" class="image app">
+          <img src="assets/img/portfolio/portfolio-1.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-2.jpg" class="image app">
+          <img src="assets/img/portfolio/portfolio-2.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-3.jpg" class="image app">
+          <img src="assets/img/portfolio/portfolio-3.jpg" alt="" style="width: 200px;">
+      </a>
+
+      <a href="assets/img/portfolio/portfolio-4.jpg" class="image cards">
+          <img src="assets/img/portfolio/portfolio-4.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-5.jpg" class="image cards">
+          <img src="assets/img/portfolio/portfolio-5.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-6.jpg" class="image cards">
+          <img src="assets/img/portfolio/portfolio-6.jpg" alt="" style="width: 200px;">
+      </a>
+
+      <a href="assets/img/portfolio/portfolio-details-1.jpg" class="image web">
+          <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-details-2.jpg" class="image web">
+          <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="" style="width: 200px;">
+      </a>
+      <a href="assets/img/portfolio/portfolio-details-3.jpg" class="image web">
+          <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="" style="width: 200px;">
+      </a>
+  
+
+
+  </div>
+
+</div>
+    
+
+    <!-- footer  -->
+    <section id="footer"  class="mt-5 " style="background-color: #515d6a;">
+      <div class="container text-center text-white">
+        <div class= "row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 text-start">
+   
+          <div>
+            <div class="py-3 m-2 rounded ">
+              <h3>Sailor</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA
+                <br> <br>
+                <b>Phone:</b> +1 5589 55488 55
+                <b>Email:</b> info@example.com
+              </p>
+              <br>
+              <div class="medialinks">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-skype"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="py-3 m-2 rounded">
+              <h3>Useful Links</h3>
+              <ul class="usefulLinkUl">
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">About us</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Services</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Terms of service</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="py-3 m-2 rounded">
+              <h3>Our Services</h3>
+              <ul class="usefulLinkUl">
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Web Design</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Web Development</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Product Management</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Marketing</a></li>
+                <li><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          <div>
+            <div class="py-3 m-2 rounded">
+              <h3>Our News Letter</h3>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                <br>
+              </p>
+              <div style="display: flex;align-items: center;">
+                  <input type="text"  class="rounded-start border-0 py-2">
+                  <input type="button" value="Subscribe" class="py-2 px-2 border-0 text-white bg-danger rounded-end"  >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- footer2 -->
+    <footer class="container-fluid text-center py-4 text-white"  style="background: #4a5562;" >
+      <div>© Copyright <b>Sailor</b>. All Rights Reserved</div>
+      <div>Designed by BootstrapMade</div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+    <script src="script.js"></script>
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+      
+          $('.buttons').click(function(){
+      
+              $(this).addClass('active').siblings().removeClass('active');
+      
+              var filter = $(this).attr('data-filter')
+      
+              if(filter == 'all'){
+                  $('.image').show(400);
+              }else{
+                  $('.image').not('.'+filter).hide(200);
+                  $('.image').filter('.'+filter).show(400);
+              }
+      
+          });
+      
+          $('.gallery').magnificPopup({
+      
+              delegate:'a',
+              type:'image',
+              gallery:{
+                  enabled:true
+              }
+      
+          });
+      
+      });
+      
+      </script>
+</body>
+
+</html>
